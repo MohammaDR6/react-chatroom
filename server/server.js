@@ -25,4 +25,13 @@ io.on("connection", (x)=> {
         x.join(data);
         console.log(`User with ${x.id} id joined ${data} Room`);
     });
+
+    x.on("send", (data)=> {
+        x.to(data.roomId).emit("receive", data)
+    })
+
+    x.on("disconnect", ()=> {
+        console.log(`"disconnected User : ${x.id}`);
+    });
 });
+
