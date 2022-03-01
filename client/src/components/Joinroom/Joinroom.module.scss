@@ -1,0 +1,31 @@
+.container {
+    background-color: white;
+    width: 380px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+input {
+    background-color: rgba(214, 214, 214, 0.582);
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 20px auto 0 auto;
+    width: 330px;
+    height: 50px;
+    border: none;  
+    outline: none; 
+}
+.joinButton {
+    color: #FFFFFF;
+    margin: auto;
+    width: 350px;
+    height: 60px;
+    background-color: #a021c4d0;
+    border: none;
+}
+.joinButton:hover {
+    cursor: pointer;
+}
